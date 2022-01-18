@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CryptoCooms | The NFT Collection</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+	      name="viewport">
+	<meta content="CryptoCooms | The NFT Collection" name="title">
+	<meta content="Homepage of the Cryptocooms NFT Collection." name="description">
+
+	<link href="./index.css" rel="stylesheet" type="text/css">
+	<link href="./fonts/inter.css" rel="stylesheet" type="text/css">
+	<script src="./db/coomDB.js"></script>
+	<script src="./index.js"></script>
+
+	<link href="./favicon.png" rel="shortcut icon">
+	<link href="./apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="Cryptocooms" name="apple-mobile-web-app-title">
+	<meta content="Cryptocooms" name="application-name">
+
+	<!-- Open Graph / Facebook -->
+	<meta content="website" property="og:type">
+	<meta content="https://cryptocoo.ms" property="og:url">
+	<meta content="CryptoCooms | The NFT Collection" property="og:title">
+	<meta content="Homepage of the Cryptocooms NFT Collection." property="og:description">
+	<meta content="https://cryptocoo.ms/images/socialmediapreview.jpg" property="og:image">
+
+	<!-- Twitter -->
+	<meta content="summary_large_image" property="twitter:card">
+	<meta content="https://cryptocoo.ms" property="twitter:url">
+	<meta content="CryptoCooms | The NFT Collection" property="twitter:title">
+	<meta content="Homepage of the Cryptocooms NFT Collection." property="twitter:description">
+	<meta content="https://cryptocoo.ms/images/socialmediapreview.jpg" property="twitter:image">
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2JHCNQ708"></script>
+	<script>window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+
+	gtag('js', new Date());
+	gtag('config', 'G-Z2JHCNQ708');
+	</script>
+</head>
+<body onload="preload()">
+
+<div id="bodycontent">
+
+	<div id="header">
+		<span class="headertitleitem" id="pagetitle">
+			CryptoCooms&nbsp;
+		</span>
+		<span class="headertitleitem" id="pagedescription">
+			The&nbsp;NFT&nbsp;Collection
+		</span>
+	</div>
+
+	<div class="module">
+		<!--<div class="p">
+			Imagine a feeling... The feeling of seeing long green bars on a candlestick chart. The green waves of light
+			gracefully warm your eyes as you let out a scream born from pure euphoria. A flow leaves your earthly body
+			as you come into a sublime realm of greatness and wonder. You have an indescribable mental clarity you
+			cannot quantify. Floating weightlessly, you find yourself suspended among the stars in a timeless instant
+			that seems like forever. Then it passes, and you are gently pushed back into your seat. This is CryptoCooms.
+		</div>-->
+
+		<div class="p h1">
+			What are CryptoCooms?
+		</div>
+
+		<div class="p">
+			They are pure expressions of euphoria, the consequence of seeing green candles on a price graph: elation
+			elicited by exponential price gains. CryptoCooms are a surreal representation of the beauty, diversity,
+			and history of the global cryptocurrency ecosystem: a venerable ecology of projects and the people who
+			create and participate in them.
+		</div>
+
+		<div class="p h1" style="font-style: italic">
+			...but what are they really?
+		</div>
+
+		<div class="p">
+			CryptoCooms are <span style="text-decoration: line-through;">gobs of coom</span> collectible works of art
+			with proof of ownership stored on the Tezos blockchain in the form of FA2 tokens, otherwise known as NFTs
+			(Non-fungible tokens). The collection is a limited edition of only sixty-nine pieces. Each CryptoCoom is a
+			carefully handcrafted masterwork of the highest quality. High-resolution copies of the works themselves,
+			accessible to the sixty-nine owners, are hosted in a decentralized manner using a technology known as the
+			Interplanetary File System, or IPFS.
+		</div>
+	</div>
+	<div id="previewgrid"><!--cooms will be placed here by coomascript--></div>
+
+	<div class="module">
+		<div class="p h1">
+			How can I get one?
+		</div>
+		<div class="p">
+			You can buy and sell NFTs on decentralized marketplaces. CryptoCooms are now traded on the Hic et Nunc
+			platform. To buy one, you will first need to purchase some Tezos tokens on an exchange, like <a
+				href="https://www.kraken.com" target="_blank">Kraken</a>. Then, you will need to send those tokens to a
+			Tezos wallet. Hic et Nunc reccomends using <a href="https://wallet.kukai.app" target="_blank">Kukai</a>. You
+			can then connect the wallet to the Hic et Nunc decentralized app.
+		</div>
+
+		<div class="p h1">
+			Right now, the CryptoCooms are up for sale on Hic et Nunc. Don't miss your chance to be the first to
+			take ownership of virtual coom on the Tezos blockchain!
+		</div>
+
+		<div style="display: flex; flex-flow: row nowrap; justify-content: center;">
+			<a href="https://www.hicetnunc.xyz/tz/tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya/" id="storepagebutton" target="_blank">
+				Visit the Hic et Nunc page
+			</a>
+		</div>
+
+		<div class="p">
+			To ensure that you are buying a Real Official CryptoCoom&trade;, please note that the following Tezos
+			address was used when creating the CryptoCooms. You will see this address on <a href="https://www.hicetnunc.xyz/tz/tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya/" target="_blank">the
+			CryptoCooms account page on Hic et Nunc</a>; the chain of ownership for all CryptoCooms traces back to it.
+			<span style="font-weight: 500; font-style: italic">Note: Tezos addresses ARE case-sensitive!</span>
+		</div>
+		<textarea class="monospaceproperty selectable" id="CCaddress"
+		          onclick="copyElementText('CCaddress')" readonly rows="1"
+		          type="text"
+		          value="tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya">tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya</textarea>
+
+		<div class="p">
+			Please note: <span style="font-style: italic">Formerly, this project was designed around ERC-1155 tokens on
+			the Ethereum blockchain, but due to lack of any interest (or sales) on what was and is a very oversaturated
+			platform, I have since moved the project over in an attempt to give it a second chance and to try something
+			new.</span>
+		</div>
+
+		<div class="p">
+			There are many different types of CryptoCooms. They range from new to old, from famous to obscure, and from
+			reputable to untrustworthy. Ultimately, CryptoCooms are a reflection of the incredible diversity of the
+			crypto market. <span class="h1">To see more details about a specific CryptoCoom, just find it in the list
+			below and <span class="tapIfMobile">click</span> on it:</span>
+		</div>
+	</div>
+
+	<div id="container"><!--cooms will be placed here by coomascript--></div>
+
+	<div class="module">
+		<div class="p">
+			If you have any questions or coomments, or if you notice an issue with this website, use the link at the
+			bottom of this page to send me a message on twitter! Ohhhh god I'm coooooming I have to go now OOOOOOOHHHH
+			FUUUUUU
+		</div>
+	</div>
+
+	<div id="footer">
+		<div id="footerbuttons">
+			<a class="buttonlink footerbutton" href="https://twitter.com/cryptocooms" target="_blank">Twitter:&nbsp;&#64;cryptocooms</a>
+			<!--<a class="buttonlink footerbutton" href="https://www.reddit.com/user/CryptoCooms" target="_blank">Reddit</a>
+			<a class="buttonlink footerbutton" href="https://www.hicetnunc.xyz/tz/tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya/" target="_blank">Hic et Nunc</a>-->
+		</div>
+
+		<div id="copyright"><br>
+			CryptoCooms and all associated artworks &copy;&nbsp;2021&nbsp;Anonymous, all trademarks are property of
+			their respective owners.
+		</div>
+	</div>
+
+</div>
+
+<div id="overlay">
+	<div id="overlayheader">
+		<div id="selectedcoomnumber"></div>
+		<div id="overlayclosebox" onclick="onClickOverlayClose()"></div>
+	</div>
+	<div id="overlaycontent">
+		<div id="selectedimagecontainer">
+			<div id="selectedimage"></div>
+		</div>
+		<div id="selectedcoomtext">
+			<div id="selectedname"></div>
+			<div id="selectedinfo"></div>
+
+			<div style="width: 100%; text-align: center; padding: 1em 0">
+				<a class="buttonlink" href="" id="storeLink" target="_blank"><span class="tapIfMobile">Click</span> here
+					for <span id="storeLinkItemName"></span>'s listing</a>
+			</div>
+
+			<div class="selectedcoompropertyheader">Token ID</div>
+			<div>This is the unique ID for this token on Hic et Nunc. <span class="tapIfMobile">Click</span> to copy it to
+				your clipboard:
+			</div>
+			<textarea class="monospaceproperty selectable" id="tokenID" onclick="copyElementText('tokenID')" readonly
+			          rows="1" type="text" value=""></textarea>
+			<input id="deselect" style="display: none!important;" type="text"/>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>
