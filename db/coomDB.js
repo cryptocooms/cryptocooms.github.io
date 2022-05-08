@@ -1,7 +1,7 @@
 /* Incredibly unsophisticated cryptocooms information database */
 /* Ticker, Name, Color, Description, Contract Address, Token ID, Store link, additional field 1, additional field 2 */
 const contractAddress = "tz1dG2gtMxRELxjHyUNGwYCwg12AGiNa4iya";
-const marketplaceURL = "https://www.hicetnunc.art/objkt/";
+const marketplaceURL = "https://www.teia.art/objkt/";
 const coomDB = [
 	[
 		"DOGE",
